@@ -10,6 +10,7 @@ class Doctor
 
   def add_appointment(apt)
     @patients << apt.patient
+    @appointments << apt
   end
 
 end
