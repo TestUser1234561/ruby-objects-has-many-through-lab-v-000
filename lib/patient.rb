@@ -8,4 +8,8 @@ class Patient
     @doctors = []
   end
 
+  def add_appointment(apt)
+    @appointments << apt
+  end
+
 end
