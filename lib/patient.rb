@@ -10,7 +10,9 @@ class Patient
 
   def add_appointment(apt)
     @appointments << apt
-    @doctors << apt.doctor
+    if(!@doctors.include?(apt.doctor))
+      @doctors << apt.doctor
+    end
   end
 
 end
